@@ -1,0 +1,18 @@
+.header {
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  background-color: aquamarine;
+}
+
+.middlelinks {
+  display: flex;
+  gap: 20px;
+}
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
