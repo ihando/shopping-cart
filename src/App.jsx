@@ -5,6 +5,7 @@ import Layout from "./components/Layout/Layout";
 import Cart from "./pages/Cart/Cart";
 import Shop from "./pages/Shop/Shop";
 import IndividualProduct from "./pages/IndividualProduct/IndividualProduct";
+import { ShopContextProvider } from "./context/shop-context";
 
 const router = createBrowserRouter([
   {
@@ -34,7 +35,11 @@ const router = createBrowserRouter([
 
 // App component to provide the router
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <ShopContextProvider>
+      <RouterProvider router={router} />
+    </ShopContextProvider>
+  );
 };
 
 export default App;

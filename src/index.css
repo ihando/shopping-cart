@@ -67,3 +67,8 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+
+img {
+  width: 13rem;
+  height: 15rem;
+}
